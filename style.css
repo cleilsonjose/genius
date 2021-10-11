@@ -1,9 +1,9 @@
-/*
-#002F75 azul
-#005A00 
-#990611
-#A68700
-*/
+:root {
+    --red:#990611;
+    --yellow:#A68700;
+    --green:#005A00;
+    --blue:#002F75
+}
 body{
     margin:0;
     padding: 0;
@@ -33,25 +33,25 @@ body{
 
 .blue{
     grid-area: blue;
-    background-color:#004AA8;
+    background-color:var(--blue);
     border-bottom-right-radius: 100%;
 }
 .green{
     grid-area: green;
-    background-color:#279927;
+    background-color:var(--green);
     border-top-left-radius: 100%;
 } 
 .red{
     grid-area: red;
-    background-color:#E42634;
+    background-color:var(--red);
     border-top-right-radius: 100%;
 }
 .yellow {
     grid-area: yellow;
-    background-color:#FBD32D;
+    background-color:var(--yellow);
     border-bottom-left-radius: 100%;
 }
 
 .selected {
-    opacity: 0.8;
+    opacity: 0.7;
 }
